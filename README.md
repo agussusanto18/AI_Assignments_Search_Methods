@@ -9,4 +9,7 @@ python main.py
 ```
 
 ## Screenshot
-<img src="assets/ss1.png" width="200">
+
+<img src="assets/ss1.png" width="400">
+
+<img src="assets/ss2.png" width="400">
