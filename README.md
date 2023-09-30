@@ -7,3 +7,6 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
+
+## Screenshot
+<img src="assets/ss1.png" width="200">
