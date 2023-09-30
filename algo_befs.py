@@ -17,3 +17,5 @@ def best_first_search(graph, start, goal):
                     h = haversine(coordinates[node], coordinates[neighbor])
                     queue.append((h, neighbor))
     return None
+
+    
