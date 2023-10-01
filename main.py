@@ -2,18 +2,19 @@ import time
 from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox
-from coordinates import coordinates
 from algo_bfs import bfs
 from algo_dfs import dfs
 from algo_befs import best_first_search
 from algo_iddfs import iddfs
 from algo_astar import astar_search
 from algo_bruteforce import brute_force
-from utils import haversine, read_file, show_graph
+from utils import haversine, read_file, show_graph, read_coordinates
 
 # adjacency = adjacency_list
 adjacency = read_file('assets/Adjacencies.txt')
+coordinates = read_coordinates('assets/coordinates.csv')
 node_colors = {node: 'grey' for node in adjacency}
+
 
 # Function to perform the search and display the result
 def perform_search():

@@ -37,6 +37,17 @@ def read_file(filename):
 
      return adjacency_list
 
+def read_coordinates(filename):
+     coordinates = {}
+
+     with open(filename, 'r') as file:
+          for line in file:
+               city, latitude, longitude = line.strip().split(',')
+               coordinates[city] = [float(latitude.strip()), float(longitude.strip())]
+
+     return coordinates
+
+
 def show_graph(adjacency_list, node_colors, route_nodes):
 
      # # Change the node color for every visited node
